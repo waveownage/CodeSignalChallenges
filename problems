@@ -23,5 +23,23 @@ def matrixElementsSum(matrix):
     
     _________________________________________________________________________________________________________________________________________________________________
 
+Given an array of strings, return another array containing all of its longest strings.
 
+def allLongestStrings(inputArray):
+    longestLength = 0
+    list= []
+    for i in inputArray:
+        print(i)
+        if len(i) > longestLength:
+            longestLength = len(i) 
+            list = []
+            list.append(i)
+            continue
+        if len(i) == longestLength:
+            list.append(i)
+        else:
+            continue
+    return list
+    
+    
 
